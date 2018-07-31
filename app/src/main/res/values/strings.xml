@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BaseBallGame</string>
+    <string name="ok">OK</string>
+    <string name="edit_text">번호를 입력하세요.</string>
+</resources>
