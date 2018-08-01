@@ -41,7 +41,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         public ViewHolder(View v) {
             super(v);
-            mNumberTextView = v.findViewById(R.id.number_text)
+            mNumberTextView = v.findViewById(R.id.number_text);
         }
     }
 }
