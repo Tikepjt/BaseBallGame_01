@@ -9,11 +9,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView mRecyclerView;
-    LinearLayoutManager mLayoutManager;
-    RecyclerViewAdapter mAdapter;
+//    RecyclerView mRecyclerView;
+//    LinearLayoutManager mLayoutManager;
+//    RecyclerViewAdapter mAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         final TextView numberText = findViewById(R.id.number_text);
 
-        TextView scoreText = findViewById(R.id.score);
+//        TextView scoreText = findViewById(R.id.score);
 
 //        Button resetButton = findViewById(R.id.reset_button);
 
@@ -41,12 +44,104 @@ public class MainActivity extends AppCompatActivity {
 
         Button okButton = findViewById(R.id.ok_button);
 
-        okButton.setOnClickListener(new Button.OnClickListener() {
+
+        button0.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                numberText.setText(numberInputText.getText());
+            public void onClick(View view) {
+                EditText textEdit = findViewById(R.id.number_input_Text);
+                String text = numberInputText.getText().toString();
+                textEdit.setText(text + "0");
+
             }
         });
 
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText textEdit = findViewById(R.id.number_input_Text);
+                String text = numberInputText.getText().toString();
+                textEdit.setText(text + "1");
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText textEdit = findViewById(R.id.number_input_Text);
+                String text = numberInputText.getText().toString();
+                textEdit.setText(text + "2");
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText textEdit = findViewById(R.id.number_input_Text);
+                String text = numberInputText.getText().toString();
+                textEdit.setText(text + "3");
+            }
+        });
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText textEdit = findViewById(R.id.number_input_Text);
+                String text = numberInputText.getText().toString();
+                textEdit.setText(text + "4");
+            }
+        });
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText textEdit = findViewById(R.id.number_input_Text);
+                String text = numberInputText.getText().toString();
+                textEdit.setText(text + "5");
+            }
+        });
+
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText textEdit = findViewById(R.id.number_input_Text);
+                String text = numberInputText.getText().toString();
+                textEdit.setText(text + "6");
+            }
+        });
+
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText textEdit = findViewById(R.id.number_input_Text);
+                String text = numberInputText.getText().toString();
+                textEdit.setText(text + "7");
+            }
+        });
+
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText textEdit = findViewById(R.id.number_input_Text);
+                String text = numberInputText.getText().toString();
+                textEdit.setText(text + "8");
+            }
+        });
+
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText textEdit = findViewById(R.id.number_input_Text);
+                String text = numberInputText.getText().toString();
+                textEdit.setText(text + "9");
+            }
+        });
+
+
+        okButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                numberText.setText(numberInputText.getText());
+            }
+        });
     }
 }
